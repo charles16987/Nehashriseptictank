@@ -2,7 +2,9 @@ import React, { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ChevronLeft, ChevronRight, Phone, MessageSquare, ShieldCheck, Award, Zap } from "lucide-react";
 import { phoneNumbers, whatsappNumbers, metadataDetails } from "../data";
-
+import banner1 from "../assets/images/Neha_Shri_banner-1.jpg";
+import banner2 from "../assets/images/Neha_Shri_banner-2.jpg";
+import banner3 from "../assets/images/Neha_Shri_banner-3.jpg";
 interface Slide {
   id: number;
   badge: string;
@@ -36,8 +38,7 @@ export default function HeroSlider() {
   secondaryCtaText: "Get Quick Support",
   secondaryCtaUrl: "#",
   bgGradient: "from-blue-600 via-sky-700 to-indigo-950",
-  imageUrl:
-    "/src/assets/images/Neha_Shri_banner-1.jpg"
+  imageUrl:banner1
 },
     {
   id: 1,
@@ -51,8 +52,7 @@ export default function HeroSlider() {
   secondaryCtaText: "Enquire Now",
   secondaryCtaUrl: "#",
   bgGradient: "from-sky-500 via-blue-600 to-slate-900",
-  imageUrl:
-    "/src/assets/images/Neha_Shri_banner-2.jpg"
+  imageUrl:banner2
 },
     {
   id: 2,
@@ -66,8 +66,7 @@ export default function HeroSlider() {
   secondaryCtaText: "Get Estimate",
   secondaryCtaUrl: "#",
   bgGradient: "from-sky-500 via-blue-600 to-slate-900",
-  imageUrl:
-    "/src/assets/images/Neha_Shri_banner-3.jpg"
+  imageUrl:banner3
 },
     
   ];

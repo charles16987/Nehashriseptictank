@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { motion } from "motion/react";
+import abouts from "../src/assets/images/about-us_neha_shri.jpg";
 import { 
   Phone, 
   MessageSquare, 
@@ -313,7 +314,7 @@ useEffect(() => {
                 <div className="absolute inset-0 bg-gradient-to-tr from-brand-blue-500/10 to-brand-green-500/10 rounded-3xl blur-2xl transform rotate-2 animate-pulse-slow" />
                 <div className="relative rounded-3xl overflow-hidden shadow-xl border border-slate-200 bg-slate-50">
                   <img
-                    src="/src/assets/images/about-us_neha_shri.jpg"
+                    src={abouts}
                     alt="Professional team using high pressure suction trucks for hygienic water treatments"
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover"

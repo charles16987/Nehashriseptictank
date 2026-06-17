@@ -1,5 +1,14 @@
 import { Truck, Home, ShieldAlert, Sparkles, AlertCircle, Droplets, Clock, Coins, Users, Leaf, Trash2, ShieldCheck } from "lucide-react";
 
+import gallery0 from "../src/assets/images/nehashriseptictank_gallery.jpeg";
+import gallery1 from "../src/assets/images/nehashriseptictank_gallery-1.jpeg";
+import gallery2 from "../src/assets/images/nehashriseptictank_gallery-2.jpeg";
+import gallery3 from "../src/assets/images/nehashriseptictank_gallery-3.jpeg";
+import banner3 from "../src/assets/images/Neha_Shri_banner-3.jpg";
+import gallery4 from "../src/assets/images/nehashriseptictank_gallery-4.jpeg";
+import gallery5 from "../src/assets/images/nehashriseptictank_gallery-5.jpeg";
+import gallery6 from "../src/assets/images/nehashriseptictank_gallery-6.jpg";
+import gallery7 from "../src/assets/images/nehashriseptictank_gallery-7.webp";
 export interface Service {
   id: string;
   title: string;
@@ -152,89 +161,77 @@ export const whyChooseUsData: WhyChooseUsItem[] = [
 ];
 
 export const galleryData: GalleryItem[] = [
-  // {
-  //   id: "gal-1",
-  //   title: "",
-  //   category: "Vehicles",
-  //   imageUrl: "/src/assets/images/Neha_Shri_banner-2.jpg",
-  //   alt: "Neha Shri super suction septic vacuum tanker truck at a residential customer site",
-  //   description: ""
-  // },
-  {
+   {
     id: "gal-2",
     title: "",
     category: "Vehicles",
-    imageUrl: "/src/assets/images/nehashriseptictank_gallery.jpeg",
+    imageUrl: gallery0,
     alt: "Professional technician setting up a high-pressure drainage blockage jetting system",
-    description: ""
+    description: "",
   },
   {
     id: "gal-3",
     title: "",
     category: "Vehicles",
-    imageUrl: "/src/assets/images/nehashriseptictank_gallery-1.jpeg",
+    imageUrl: gallery1,
     alt: "Septic tank inspection dome and modern instruments during a routine home check",
-    description: ""
+    description: "",
   },
   {
     id: "gal-4",
     title: "",
     category: "Vehicles",
-    imageUrl: "/src/assets/images/nehashriseptictank_gallery-2.jpeg",
+    imageUrl: gallery2,
     alt: "Industrial vacuum hose and safe wastewater slurry pipelines at a commercial facility",
-    description: ""
+    description: "",
   },
   {
     id: "gal-5-ba",
     title: "",
     category: "Vehicles",
-    imageUrl: "/src/assets/images/nehashriseptictank_gallery-3.jpeg",
-    alt: "Before and After comparison of block removal in drainage duct",
-    description: ""
+    imageUrl: gallery3,
+    alt: "Before and after comparison of block removal in drainage duct",
+    description: "",
   },
   {
     id: "gal-6-ba",
     title: "",
     category: "Vehicles",
-    imageUrl: "/src/assets/images/Neha_Shri_banner-3.jpg",
+    imageUrl: banner3,
     alt: "Before and after service of septic tank surrounding sanitation",
-    description: ""
-  }
-  ,
+    description: "",
+  },
   {
     id: "gal-7-ba",
     title: "",
     category: "Results",
-    imageUrl: "/src/assets/images/nehashriseptictank_gallery-4.jpeg",
+    imageUrl: gallery4,
     alt: "Before and after service of septic tank surrounding sanitation",
-    description: ""
-  }
-  ,
+    description: "",
+  },
   {
     id: "gal-8-ba",
     title: "",
     category: "Results",
-    imageUrl: "/src/assets/images/nehashriseptictank_gallery-5.jpeg",
+    imageUrl: gallery5,
     alt: "Before and after service of septic tank surrounding sanitation",
-    description: ""
-  }
-   ,
+    description: "",
+  },
   {
     id: "gal-9-ba",
     title: "",
     category: "Work Process",
-    imageUrl: "/src/assets/images/nehashriseptictank_gallery-6.jpg",
+    imageUrl: gallery6,
     alt: "Before and after service of septic tank surrounding sanitation",
-    description: ""
-  }
-   ,
+    description: "",
+  },
   {
     id: "gal-10-ba",
     title: "",
     category: "Work Process",
-    imageUrl: "/src/assets/images/nehashriseptictank_gallery-7.webp",
+    imageUrl: gallery7,
     alt: "Before and after service of septic tank surrounding sanitation",
-    description: ""
+    description: "",
   }
   
 ];
