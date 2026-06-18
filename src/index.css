@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
-  --font-display: "Space Grotesk", sans-serif;
-  --font-mono: "JetBrains Mono", monospace;
+ --font-sans: "Poppins", system-ui, sans-serif;
+  --font-display: "Montserrat", sans-serif;
+  --font-mono: "Poppins", system-ui, sans-serif;
   
   --color-brand-blue-50: #f0f6ff;
   --color-brand-blue-100: #e0eeff;
@@ -22,7 +22,19 @@
 
   --color-brand-dark: #070f20;
 }
-
+h1,h2,h3,h4,h6,h5{
+  font-family: var( --font-display) !important;
+}
+h2{
+  font-weight: 600 !important;
+}
+.tracking-tight {
+   font-family: var( --font-display) !important;
+}
+.tracking-widest {
+   font-family: var( --font-mono) !important;
+   font-weight: 700 !important;
+}
 /* Custom Neha Shri Brand Text Effect from Logo */
 .nehashri-title {
   color: #ffff00;
@@ -127,4 +139,11 @@
 
 .animate-pulse-slow {
   animation: pulse-slow 8s ease-in-out infinite;
+}
+.max-w-7xl.mx-auto.px-4.w-full.z-20{
+  top: -48px;
+    position: relative;
+}
+.absolute.bottom-6.z-30.flex.items-center.gap-2{
+  bottom: 70px;
 }

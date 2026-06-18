@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { motion } from "motion/react";
+import { Truck,Building2 } from "lucide-react";
 import abouts from "../src/assets/images/about-us_neha_shri.jpg";
 import { 
   Phone, 
@@ -176,19 +177,23 @@ useEffect(() => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
           
           {/* Company Brand Logo Identity */}
-          <a href="#home" className="flex items-center space-x-2.5 cursor-pointer group">
-            {/* <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-brand-blue-600 to-brand-green-500 flex items-center justify-center text-white font-bold text-lg shadow-md group-hover:rotate-6 transition-all duration-300">
-              NS
-            </div> */}
-            <div className="flex flex-col">
-              <span className="text-brand-dark font-display font-bold text-lg tracking-tight leading-none">
-                Neha Shri
-              </span>
-              <span className="text-[10px] text-slate-500 font-semibold tracking-wider uppercase">
-                Septic Tank Cleaning
-              </span>
-            </div>
-          </a>
+          <a
+  href="#home"
+  className="flex items-center space-x-3 cursor-pointer group"
+>
+  <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-brand-blue-600 to-brand-green-500 flex items-center justify-center text-white shadow-md group-hover:rotate-6 transition-all duration-300">
+    <Truck size={22} strokeWidth={2.5} />
+  </div>
+
+  <div className="flex flex-col">
+    <span className="text-brand-dark font-extrabold text-2xl leading-none tracking-tight">
+      Neha Shri
+    </span>
+    <span className="text-[10px] text-slate-500 font-semibold tracking-[0.2em] uppercase">
+      Septic Tank Cleaning
+    </span>
+  </div>
+</a>
 
           {/* Desktop Link Items */}
           <nav className="hidden md:flex items-center space-x-1">
@@ -342,17 +347,15 @@ useEffect(() => {
               {/* Right Column written professional copy */}
               <div>
                 <span className="text-xs text-brand-blue-600 font-extrabold uppercase tracking-widest block mb-3">
-                  Safety, Trust & Speed
-                </span>
-                
-                <h2 className="text-3xl sm:text-4xl font-display font-medium text-slate-900 tracking-tight leading-tight mb-6">
-                  Keeping Shoolagiri, Hosur & Surrounding Regions Clean & Odor-Free Every Day
-                </h2>
+                    About Neha Shri Services
+                  </span>
 
+                  <h2 className="text-3xl sm:text-4xl font-display font-medium text-slate-900 tracking-tight leading-tight mb-6">
+                    Trusted Septic Tank Cleaning Services Since 2012
+                  </h2>
                 <p className="text-slate-600 text-base leading-relaxed mb-6">
                   Maintaining a clean and healthy environment is more crucial than ever. <strong>Neha Shri Septic Tank Cleaning</strong> stands as a trusted and reliable name in the cleaning and housekeeping industry. With a stellar <strong>4.9-star rating based on 15 reviews</strong> from highly satisfied clients, we are key sanitation partners across Hosur and Shoolagiri.
                 </p>
-
                 <p className="text-slate-600 text-base leading-relaxed mb-6">
                   <strong>Established in 2012</strong>, Neha Shri has years of experience providing top-notch solutions. Strategically situated right in Shoolagiri, it is easy and fast for clients to schedule services and get rapid emergency relief. We operate <strong>Open 24 Hours, Monday to Sunday</strong>.
                 </p>
@@ -382,7 +385,69 @@ useEffect(() => {
             </div>
           </div>
         </section>
+        {/* Branch Section */}
+<section id="branch" className="py-16 bg-slate-50 border-t border-slate-200">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
+    <div className="text-center max-w-3xl mx-auto mb-12">
+      <span className="text-xs text-brand-blue-600 font-extrabold uppercase tracking-widest block mb-3">
+        Our Branch Office
+      </span>
+
+      <h2 className="text-3xl sm:text-4xl font-display font-bold text-slate-900 tracking-tight mb-4">
+        Kavihari Septic Tank Cleaning Service
+      </h2>
+
+      <p className="text-slate-600 text-base leading-relaxed">
+        Our branch office proudly serves customers across Sappadi,
+        Krishnagiri and nearby areas with reliable septic tank cleaning
+        and emergency sanitation services available 24 hours a day.
+      </p>
+    </div>
+
+    <div className="bg-white rounded-3xl border border-slate-200 shadow-lg p-6 md:p-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        {/* Address */}
+        <div>
+          <h3 className="text-lg font-bold text-slate-900 mb-4">
+            Branch Address
+          </h3>
+
+          <div className="flex items-start gap-3">
+            <MapPin className="w-5 h-5 text-brand-green-600 mt-1 shrink-0" />
+            <p className="text-slate-600 leading-relaxed">
+              No.1/295, Koneripalli,<br />
+              Kottaralapalli Village,<br />
+              Sappadi, Krishnagiri – 635117
+            </p>
+          </div>
+        </div>
+
+        {/* Contact */}
+        <div>
+          <h3 className="text-lg font-bold text-slate-900 mb-4">
+            Contact Number
+          </h3>
+
+          <a
+            href="tel:9962688005"
+            className="inline-flex items-center gap-3 px-6 py-4 bg-brand-blue-600 hover:bg-brand-blue-700 text-white rounded-2xl font-bold text-lg transition-all duration-300"
+          >
+            <Phone className="w-5 h-5" />
+            <span>99626 88005</span>
+          </a>
+
+          <p className="text-sm text-slate-500 mt-4">
+            Available 24 Hours • Emergency Service
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
         {/* 3. CORE SERVICES SECTION */}
         <section id="services" className="py-15 relative overflow-hidden bg-[#fafbfc]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -560,7 +625,7 @@ useEffect(() => {
         </section>
 
         {/* 8. CONTACT FORM & DIRECT ACTIONS SECTION */}
-        <section id="contact" className="py-15 bg-gradient-to-b from-[#fafbfc] to-white">
+        <section id="contact" className="py-15 bg-gradient-to-b from-[#fafbfc] to-white hidden ">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
@@ -710,34 +775,8 @@ useEffect(() => {
                         className="absolute inset-0"
                       />
                     </div>
-
-                    {/* Real-time Map Description & Quick Dispatch Notes */}
-                    {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-sans text-slate-600 pt-2">
-                      <div className="p-3 bg-slate-50 border border-slate-150 rounded-xl">
-                        <span className="font-bold text-slate-800 block mb-1">📍 Shoolagiri Office Base</span>
-                        <p className="leading-relaxed">Conveniently stationed right off the NH44 highway for rapid response towards local panchayats & rural estates.</p>
-                      </div>
-                      <div className="p-3 bg-slate-50 border border-slate-150 rounded-xl">
-                        <span className="font-bold text-slate-800 block mb-1">📍 Hosur Industrial Hub</span>
-                        <p className="leading-relaxed">Active vacuum trucks stationed around SIPCOT phases for high-speed commercial blockages & emergency tank clearings.</p>
-                      </div>
-                    </div> */}
                   </div>
 
-                  {/* Safety accreditation review */}
-                  {/* <div className="pt-6 border-t border-slate-100 mt-6 flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
-                    <div className="w-10 h-10 rounded-full bg-brand-blue-50 border border-brand-blue-105 flex items-center justify-center text-brand-blue-600 shrink-0">
-                      <MapPin className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <h4 className="text-xs font-bold text-slate-800 uppercase tracking-wider mb-0.5">
-                        We Clean Throughout the Region
-                      </h4>
-                      <p className="text-slate-500 text-xs leading-relaxed">
-                        Trucks are ready in <span className="font-semibold text-slate-850">Hosur, Shoolagiri, Krishnagiri, Rayakottai, and Kurubarapalli</span>. Our flat-pricing includes travel coordinates with no extra transport fees!
-                      </p>
-                    </div>
-                  </div> */}
 
                 </div>
               </div>
@@ -746,6 +785,205 @@ useEffect(() => {
 
           </div>
         </section>
+
+        <section
+  id="contact"
+  className="pb-15 bg-gradient-to-b from-[#fafbfc] to-white"
+>
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    {/* Section Heading */}
+    <div className="text-center mb-14">
+      <span className="text-xs text-brand-blue-600 font-extrabold uppercase tracking-[0.3em]">
+        Contact Us
+      </span>
+
+      <h2 className="mt-4 text-3xl sm:text-4xl font-display font-bold text-slate-900">
+        Our Offices & Service Locations
+      </h2>
+
+      <p className="mt-4 max-w-3xl mx-auto text-slate-600 leading-relaxed">
+        Contact our main office or branch office for immediate septic tank
+        cleaning services. Both locations provide fast dispatch and WhatsApp
+        support.
+      </p>
+    </div>
+
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      {/* ================= MAIN OFFICE ================= */}
+      <div className="glass-panel bg-white border border-slate-200 rounded-3xl p-6 md:p-8 shadow-lg">
+        <div className="flex items-center justify-between mb-8">
+          <div>
+            <span className="text-xs font-bold uppercase tracking-widest text-brand-blue-600">
+              Main Office
+            </span>
+
+            <h3 className="text-2xl font-display font-bold text-slate-900 mt-2">
+              Neha Shri Septic Tank Cleaning Service
+            </h3>
+          </div>
+
+          <div className="w-14 h-14 rounded-2xl bg-brand-blue-50 flex items-center justify-center">
+            <MapPin className="w-7 h-7 text-brand-blue-600" />
+          </div>
+        </div>
+
+        
+
+        {/* Map */}
+        <div className="rounded-2xl overflow-hidden border border-slate-200 h-[300px]">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3892.759310543835!2d78.00615057585424!3d12.663780171550693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3badd70015a0cb03%3A0x4ce95cf88fc62b4!2sShoolagiri%20Bus%20Stand!5e0!3m2!1sen!2sin!4v1781717421723!5m2!1sen!2sin"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            loading="lazy"
+            allowFullScreen
+            title="Main Office Location"
+          />
+        </div>
+        {/* Contact Buttons */}
+         <div className="space-y-4 mt-10">
+                  
+                  {/* Glowing Call button */}
+                  <div className="p-1 rounded-2xl bg-gradient-to-r from-brand-blue-500 to-emerald-500 shadow-md">
+                    <a
+                      href={`tel:${phoneNumbers.primary}`}
+                      className="glow-blue w-full p-5 bg-slate-900 hover:bg-slate-950 text-white rounded-xl font-bold tracking-tight flex items-center justify-between transition cursor-pointer active:scale-95"
+                    >
+                      <div className="flex items-center space-x-3">
+                        <Phone className="w-5 h-5 text-brand-blue-500 animate-pulse fill-current" />
+                        <div className="text-left">
+                          <span className="block text-[9px] text-slate-400 uppercase tracking-widest leading-none">
+                            Emergency Hotline Primary
+                          </span>
+                          <span className="text-base sm:text-lg text-white font-display">
+                            {phoneNumbers.primary}
+                          </span>
+                        </div>
+                      </div>
+                      <span className="text-xs bg-brand-blue-500 text-slate-950 px-3 py-1.5 rounded-lg">
+                        CALL NOW
+                      </span>
+                    </a>
+                  </div>
+
+                  {/* Secondary Call option */}
+                  <a
+                    href={`tel:${phoneNumbers.secondary}`}
+                    className="w-full p-4 bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 rounded-2xl font-bold tracking-tight flex items-center justify-between transition cursor-pointer"
+                  >
+                    <div className="flex items-center space-x-3">
+                      <Phone className="w-5 h-5 text-slate-400" />
+                      <div className="text-left">
+                        <span className="block text-[9px] text-slate-400 uppercase tracking-widest leading-none">
+                          Backup Dispatch Number
+                        </span>
+                        <span className="text-sm font-display text-slate-700">
+                          {phoneNumbers.secondary}
+                        </span>
+                      </div>
+                    </div>
+                    <span className="text-xs text-slate-400">CALL</span>
+                  </a>
+
+                  {/* WhatsApp Message link */}
+                  <a
+                    href={`https://wa.me/91${whatsappNumbers.primary}?text=Hi%20Neha%20Shri%20Services,%20I'd%20like%20to%20schedule%20a%20septic%20tank%20cleanup.`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full p-4.5 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 text-emerald-800 rounded-2xl font-bold tracking-tight flex items-center justify-between transition cursor-pointer shadow-sm glow-green"
+                  >
+                    <div className="flex items-center space-x-3">
+                      <MessageSquare className="w-5 h-5 text-emerald-600 fill-current" />
+                      <div className="text-left">
+                        <span className="block text-[9px] text-emerald-600 uppercase tracking-widest leading-none">
+                          Chat Dispatch
+                        </span>
+                        <span className="text-sm font-display text-emerald-800">
+                          WhatsApp Message Support
+                        </span>
+                      </div>
+                    </div>
+                    <span className="text-xs bg-emerald-600 text-white px-3 py-1.5 rounded-lg font-bold">
+                      CHAT
+                    </span>
+                  </a>
+
+
+                </div>
+      </div>
+
+      {/* ================= BRANCH OFFICE ================= */}
+      <div className="glass-panel bg-white border border-slate-200 rounded-3xl p-6 md:p-8 shadow-lg">
+        <div className="flex items-center justify-between mb-8">
+          <div>
+            <span className="text-xs font-bold uppercase tracking-widest text-amber-600">
+              Branch Office
+            </span>
+
+            <h3 className="text-2xl font-display font-bold text-slate-900 mt-2">
+              Kavihari Septic Tank Cleaning Service
+            </h3>
+          </div>
+
+          <div className="w-14 h-14 rounded-2xl bg-amber-50 flex items-center justify-center">
+            <Building2 className="w-7 h-7 text-amber-600" />
+          </div>
+        </div>
+
+        {/* Address */}
+        {/* <div className="p-5 rounded-2xl bg-amber-50 border border-amber-200 mb-6">
+          <p className="text-sm text-slate-700 leading-7">
+            No.1/295, Koneripalli,
+            <br />
+            Kottaralapalli Village,
+            <br />
+            Sappadi,
+            <br />
+            Krishnagiri - 635117
+          </p>
+        </div> */}
+
+        {/* Phone */}
+     
+
+        {/* Branch Map */}
+        <div className="rounded-2xl overflow-hidden border border-slate-200 h-[300px]">
+          <iframe
+            src="https://www.google.com/maps?q=No.1/295%20Koneripalli,%20Kottaralapalli%20Village,%20Sappadi,%20Krishnagiri%20635117&output=embed"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            loading="lazy"
+            allowFullScreen
+            title="Kavihari Branch Location"
+          />
+        </div>
+        <div className="mt-10">
+             <a
+          href="tel:9962688005"
+          className="flex items-center justify-between p-5 rounded-2xl bg-amber-500 hover:bg-amber-600 text-white transition mb-6"
+        >
+          <div>
+            <p className="text-[10px] uppercase tracking-widest text-amber-100">
+              Branch Hotline
+            </p>
+
+            <p className="text-lg font-bold">
+              9962688005
+            </p>
+          </div>
+
+          <Phone className="w-5 h-5" />
+        </a>
+        </div>
+          
+      </div>
+    </div>
+  </div>
+</section>
+        
+        
           {/* 6. FAQ SECTION ACCORDION */}
         <section id="faq" className="py-15 bg-[#fafbfc]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
