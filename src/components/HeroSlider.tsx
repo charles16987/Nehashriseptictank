@@ -227,7 +227,7 @@ export default function HeroSlider() {
                 </div>
 
                 {/* Absolute Floating Badge to display our quick call numbers */}
-                <div className="absolute -bottom-4 -left-4 bg-gradient-to-r from-[#EF4444] to-[#f43f5e] text-white py-3 px-5 rounded-xl border border-white/20 shadow-xl flex items-center gap-3">
+                {/* <div className="absolute -bottom-4 -left-4 bg-gradient-to-r from-[#EF4444] to-[#f43f5e] text-white py-3 px-5 rounded-xl border border-white/20 shadow-xl flex items-center gap-3">
                   <div className="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center text-white">
                     <Phone className="w-4.5 h-4.5 text-white fill-current animate-pulse" />
                   </div>
@@ -239,7 +239,7 @@ export default function HeroSlider() {
                       {phoneNumbers.primary}
                     </span>
                   </div>
-                </div>
+                </div> */}
               </div>
 
             </div>
