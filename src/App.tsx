@@ -830,7 +830,7 @@ useEffect(() => {
         
 
         {/* Map */}
-        <div className="rounded-2xl overflow-hidden border border-slate-200 h-[300px]">
+        {/* <div className="rounded-2xl overflow-hidden border border-slate-200 h-[150px] mb-10">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3892.759310543835!2d78.00615057585424!3d12.663780171550693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3badd70015a0cb03%3A0x4ce95cf88fc62b4!2sShoolagiri%20Bus%20Stand!5e0!3m2!1sen!2sin!4v1781717421723!5m2!1sen!2sin"
             width="100%"
@@ -840,6 +840,27 @@ useEffect(() => {
             allowFullScreen
             title="Main Office Location"
           />
+        </div> */}
+        <div>
+          <h3 className="text-lg font-medium text-slate-900 mb-4">
+             Address
+          </h3>
+
+          <div className="flex items-start gap-3">
+            <MapPin className="w-5 h-5 text-brand-green-600 mt-1 shrink-0" />
+            {/* <p className="text-slate-600 leading-relaxed">
+              No.1/295, Koneripalli,
+              Kottaralapalli Village,<br />
+              Sappadi, Krishnagiri – 635117
+            </p> */}
+            <p className="text-slate-600 leading-relaxed">
+              Hosur Main Road,
+              Near Shoolagiri Bus stand,
+              Shoolagiri,<br />
+              Hosur ,
+              Krishnagiri district -635 117
+            </p>
+          </div>
         </div>
         {/* Contact Buttons */}
          <div className="space-y-4 mt-10">
@@ -930,7 +951,20 @@ useEffect(() => {
             <Building2 className="w-7 h-7 text-amber-600" />
           </div>
         </div>
+            <div>
+          <h3 className="text-lg font-medium text-slate-900 mb-4">
+             Address
+          </h3>
 
+          <div className="flex items-start gap-3">
+            <MapPin className="w-5 h-5 text-brand-green-600 mt-1 shrink-0" />
+            <p className="text-slate-600 leading-relaxed">
+              No.1/295, Koneripalli,
+              Kottaralapalli Village,<br />
+              Sappadi, Krishnagiri – 635117
+            </p>
+          </div>
+        </div>
         {/* Address */}
         {/* <div className="p-5 rounded-2xl bg-amber-50 border border-amber-200 mb-6">
           <p className="text-sm text-slate-700 leading-7">
@@ -948,7 +982,7 @@ useEffect(() => {
      
 
         {/* Branch Map */}
-        <div className="rounded-2xl overflow-hidden border border-slate-200 h-[300px]">
+        {/* <div className="rounded-2xl overflow-hidden border border-slate-200 h-[300px]">
           <iframe
             src="https://www.google.com/maps?q=No.1/295%20Koneripalli,%20Kottaralapalli%20Village,%20Sappadi,%20Krishnagiri%20635117&output=embed"
             width="100%"
@@ -958,7 +992,7 @@ useEffect(() => {
             allowFullScreen
             title="Kavihari Branch Location"
           />
-        </div>
+        </div> */}
         <div className="mt-10">
              <a
           href="tel:9962688005"
